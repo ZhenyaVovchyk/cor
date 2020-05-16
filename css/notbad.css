@@ -37,29 +37,14 @@
     position: absolute;
 }
 
-#container img {
-    width: 33.333333333333336%;
-    position: absolute;
-    cursor: pointer;
-    top: 5%;
-    right: 60%;
-    -moz-transition: all 1s ease-out;
-    -o-transition: all 1s ease-out;
-    -webkit-transition: all 1s ease-out;
-}
-
-#container img:hover {
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -o-transform: scale(1.1);
-}
-
 #start {
     position: fixed;
     color: rgba(0, 0, 0, 0.85);
     font-size: large;
-    top: 57%;
-    left: 50%;
+    top: 50%;
+    left: 48%;
+    margin: auto;
+    text-align: center;
     transition: all ease 0.5s;
 }
 
@@ -68,8 +53,8 @@
     color: rgba(0, 0, 0, 0.85);
     font-size: large;
     font-weight: bold;
-    top: 60%;
-    left: 49%;
+    top: 54%;
+    left: 47%;
     background-color: rgba(0, 0, 0, 0);
     border: none;
     cursor: pointer;

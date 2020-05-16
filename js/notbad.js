@@ -83,8 +83,7 @@ let backs = {
 
 
 window.addEventListener('resize', () => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    location.reload();
 });
 window.addEventListener('load', () => { start(); });
 window.addEventListener('dblclick', () => { cancelAnimationFrame(recAnimFrame) });
