@@ -27,20 +27,22 @@
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.85);
     background-image: linear-gradient(#000, #fff, #000);
+    cursor: none;
 }
 
 #container {
     overflow: hidden;
-    width: 380px;
-    height: 250px;
+    width: 25%;
+    height: 25%;
+    position: absolute;
 }
 
 #container img {
     width: 33.333333333333336%;
     position: absolute;
     cursor: pointer;
-    top: 33.333333333333336%;
-    left: 33.333333333333336%;
+    top: 5%;
+    right: 60%;
     -moz-transition: all 1s ease-out;
     -o-transition: all 1s ease-out;
     -webkit-transition: all 1s ease-out;

@@ -26,13 +26,15 @@ function BacksImg(img) {
     this.direction = Math.floor(Math.random() * 2 - 2 + Math.random() * 1 + 1);
 }
 
-
+let x1, y1;
 let recAnimFrame, backs0 = [],
     numBacks = 41;
 
 let img = new Image();
 img.src = './img/stop.png';
 
+let aim = new Image();
+aim.src = './img/bg.png';
 
 let backs = {
     0: new BacksImg('./img/0.png'),
@@ -86,7 +88,10 @@ window.addEventListener('resize', () => {
 });
 window.addEventListener('load', () => { start(); });
 window.addEventListener('dblclick', () => { cancelAnimationFrame(recAnimFrame) });
-
+window.addEventListener('mousemove', (e) => {
+    x1 = e.offsetX - 50;
+    y1 = e.offsetY - 50;
+})
 
 
 
@@ -102,8 +107,10 @@ function upDate() {
 
 function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height); //clear canvas
-    let ax, ay, ar;
 
+    ctx.drawImage(aim, x1, y1, 100, 100); // draw aim
+
+    let ax, ay, ar;
     for (let i in backs) {
         let b = backs[i];
         ax = (b.x - b.xx) * (b.zz / b.z);
